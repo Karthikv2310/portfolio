@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+html {
+        scroll-behavior: smooth;
+    }
+body{
+   background-color:black;
+   min-height:100vh;
+   line-height:1.5;
+   width:100vw ;
+   overflow-x: hidden;
+}
+.gradient-img{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:-1;
+    
+}
+
+.blur-effect{
+    position: absolute;
+    height: 0;
+    width:30rem;
+    top:20%;
+    right:0;
+    box-shadow: 0 0 700px 15px white;
+    rotate: -30deg;
+    opacity: 0.5;
+}
+.nav-color{
+    color:#e7e7e7;
+    font-family:"Alumni Sans SC";
+    font-size:28px
+}
+.tag-card{
+   padding-top:170px;
+
+}
+.tag-card-hed{
+    font-family:"Bebas Neue";
+    font-size:70px;
+    line-height:1.5;
+    word-spacing:0px;
+    letter-spacing:3px;
+    background-image: linear-gradient(to right bottom, #838383,
+  #491f6b,#8b2aff);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For newer browsers */
+  color: transparent;
+}
+.tag-card-para{
+    color:darkgray;
+    font-family: "Roboto";
+    width:auto;
+    text-transform: uppercase;
+}
+.d-model{
+    position: absolute;
+    top:0;
+    right:-20%;
+    scale: 0.8;
+    overflow: hidden;
+}
+.page1{
+   margin-bottom:170px; 
+}
+.about-me-card{
+    margin-bottom:150px;
+    padding:0;
+    
+}
+.about-me-hed{
+    font-family:"Bebas Neue";
+    color:#e7e7e7;
+    font-size:50px;
+}
+.about-me-para{
+    font-family:"Roboto";
+    font-size:20px;
+    padding:35px;
+    margin-left:100px;
+    border-radius:40px;
+    color:white;
+    border: 5px solid transparent; /* Required for border-image to show */
+    border-image: linear-gradient(90deg, #c4abcf, #4e008c, #8b2aff);
+    border-image-slice: 1;
+    
+}
+.web-dev-img {
+  max-width: 100%;
+  height:auto;
+  transform: scale(0.8);
+  display: block;
+  margin-top:-100px;
+   cursor: pointer;
+}
+ .comment-box {
+    position: absolute;
+    top: -80px; /* Place above image */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #00ffcc;
+    padding: 12px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    font-size: 16px;
+    text-align: left;
+  }
+ .image-container:hover .comment-box {
+    opacity: 1;
+    pointer-events: auto;
+  }
+   .typing-text::after {
+    content: '|';
+    animation: blink 0.8s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+ .skills-card{
+      margin-top:50px;
+      padding:15px;
+      margin-bottom:150px;
+    }
+    .skills-hed{
+    font-family:"Bebas Neue" ;
+    color:#e7e7e7;
+    font-size:50px;
+    margin-left:35px;
+
+    }
+    .skill-card{
+      border: 1px solid transparent; /* Reserve space */
+      transition: border-color 0.3s;
+      border-width:1px;
+      padding:5px;
+      margin-left:60px;
+      text-align: center;
+      border-radius:15px;
+      margin-bottom:15px;
+      margin-top:18px;
+    }
+   .icon{
+    height:100px;
+    width:auto;
+    margin:25px;
+   }
+   .icon-hed{
+    color:darkgrey;
+   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size:25px;
+  padding:15px;
+  font-variation-settings:
+    "wdth" 100;
+   }
+  .fllex{
+    display: flexbox;
+    justify-items: flex-start;
+    flex-direction: row;
+    margin-left:50px;
+  }
+  .skill-card2{
+      border: 1px solid transparent; /* Reserve space */
+      transition: border-color 0.5s;
+      border-width:1px;
+      
+      padding:5px;
+      text-align: center;
+      border-radius:15px;
+      margin:15px;
+     
+    }
+  .skill-card:hover{
+     border-color:darkgray;
+    border-radius:15px;
+    box-shadow: #e7e7e7;
+    transform: scale(1.1);
+    transition: background-color 0.3s ease; 
+    
+    }
+     .skill-card2:hover{
+     border-color:darkgray;
+     border-radius:15px; 
+      
+     transform: scale(1.1);
+     transition: background-color 0.3s ease; 
+    }
+    .project-hed{
+        font-family:"Bebas Neue" ;
+    color:#e7e7e7;
+    font-size:50px;
+    margin-left:35px;   
+    }
+    .project-card{
+        padding:15px;
+        margin:10px;
+        border-style:solid;
+        margin-bottom:100px;
+        border:3px solid rgb(94, 94, 94);
+    }
+    .project-card:hover{
+        border: 3px solid transparent; /* Required for border-image to show */
+    border-image: linear-gradient(90deg, #c4abcf, #4e008c, #8b2aff);
+    border-image-slice: 1; 
+    }
+    .card-title{
+       font-family: "Alumni Sans SC";
+       font-weight:1px;
+       color:#e7e7e7;
+       font-size:40px;
+       font-weight: 350;
+    }
+    .card-text{
+        font-family: "Roboto";
+        font-size:16px; 
+        color:darkgray;
+    }
+    ul {
+    display: block;
+    padding-left:160px;
+    }
+
+    .list{
+        list-style:square;
+    }
+    .portfolio-profile-details-social-media {
+    background-color: #0f1237;
+    border-radius: 30px;
+    margin: 20px;
+    margin-top: 0px;
+    padding: 20px;
+   
+    margin:50px;
+}
+.portfolio-profile-details-social-media:hover{
+     box-shadow: 0 0 50px #8b2aff;
+}
+.social-media-icon {
+    color: #ffffff;
+    font-size:25px;
+    margin:9px;
+}
